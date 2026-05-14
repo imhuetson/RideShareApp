@@ -1,0 +1,13 @@
+package imhuetsoninventoryapp.com.example.rideshareapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RideShareAppApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(RideShareAppApplication.class, args);
+    }
+
+}
