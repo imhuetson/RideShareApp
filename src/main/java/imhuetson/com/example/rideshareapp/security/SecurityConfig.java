@@ -27,7 +27,8 @@ public class SecurityConfig {
                                 "/css/**",
                                 "/h2-console/**")
                         .permitAll()
-                        .anyRequest().authenticated()
+                        .anyRequest()
+                        .authenticated()
                 )
                 .formLogin(login -> login
                         .loginPage("/login")
