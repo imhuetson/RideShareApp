@@ -1,7 +1,7 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.service;
+package imhuetson.com.example.rideshareapp.service;
 
-import imhuetsoninventoryapp.com.example.rideshareapp.domain.User;
-import imhuetsoninventoryapp.com.example.rideshareapp.repository.UserRepository;
+import imhuetson.com.example.rideshareapp.domain.User;
+import imhuetson.com.example.rideshareapp.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

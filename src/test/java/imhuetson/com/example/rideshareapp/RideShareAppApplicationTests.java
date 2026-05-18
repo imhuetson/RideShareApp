@@ -1,4 +1,4 @@
-package imhuetsoninventoryapp.com.example.rideshareapp;
+package imhuetson.com.example.rideshareapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

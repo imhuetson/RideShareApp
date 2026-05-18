@@ -1,7 +1,7 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.controller;
+package imhuetson.com.example.rideshareapp.controller;
 
-import imhuetsoninventoryapp.com.example.rideshareapp.domain.Ride;
-import imhuetsoninventoryapp.com.example.rideshareapp.repository.RideRepository;
+import imhuetson.com.example.rideshareapp.domain.Ride;
+import imhuetson.com.example.rideshareapp.repository.RideRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

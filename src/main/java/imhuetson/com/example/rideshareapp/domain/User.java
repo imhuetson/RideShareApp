@@ -1,4 +1,4 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.domain;
+package imhuetson.com.example.rideshareapp.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

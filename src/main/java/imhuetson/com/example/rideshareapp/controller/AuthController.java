@@ -1,7 +1,7 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.controller;
+package imhuetson.com.example.rideshareapp.controller;
 
-import imhuetsoninventoryapp.com.example.rideshareapp.domain.User;
-import imhuetsoninventoryapp.com.example.rideshareapp.repository.UserRepository;
+import imhuetson.com.example.rideshareapp.domain.User;
+import imhuetson.com.example.rideshareapp.repository.UserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

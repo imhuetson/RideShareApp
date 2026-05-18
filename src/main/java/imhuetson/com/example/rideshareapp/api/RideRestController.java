@@ -1,8 +1,8 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.api;
+package imhuetson.com.example.rideshareapp.api;
 
-import imhuetsoninventoryapp.com.example.rideshareapp.domain.Ride;
-import imhuetsoninventoryapp.com.example.rideshareapp.dto.RideDTO;
-import imhuetsoninventoryapp.com.example.rideshareapp.repository.RideRepository;
+import imhuetson.com.example.rideshareapp.domain.Ride;
+import imhuetson.com.example.rideshareapp.dto.RideDTO;
+import imhuetson.com.example.rideshareapp.repository.RideRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

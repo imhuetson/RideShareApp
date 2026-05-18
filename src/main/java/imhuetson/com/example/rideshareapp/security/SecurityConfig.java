@@ -1,4 +1,4 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.security;
+package imhuetson.com.example.rideshareapp.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package imhuetsoninventoryapp.com.example.rideshareapp;
+package imhuetson.com.example.rideshareapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RideShareAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RideShareAppApplication.class, args);
+        SpringApplication.run(
+                RideShareAppApplication.class, args);
     }
 
 }

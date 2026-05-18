@@ -1,6 +1,6 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.repository;
+package imhuetson.com.example.rideshareapp.repository;
 
-import imhuetsoninventoryapp.com.example.rideshareapp.domain.User;
+import imhuetson.com.example.rideshareapp.domain.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

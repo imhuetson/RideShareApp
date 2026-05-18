@@ -1,4 +1,4 @@
-package imhuetsoninventoryapp.com.example.rideshareapp.dto;
+package imhuetson.com.example.rideshareapp.dto;
 
 import lombok.Getter;
 import lombok.Setter;
