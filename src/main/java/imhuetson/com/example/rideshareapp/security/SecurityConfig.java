@@ -12,7 +12,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+    public BCryptPasswordEncoder BCryptPasswordEncoder() {
 
         return new BCryptPasswordEncoder();
     }
@@ -24,14 +24,16 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/",
                                 "/register",
+                                "/login",
                                 "/css/**",
                                 "/h2-console/**")
                         .permitAll()
                         .anyRequest()
-                        .authenticated()
+                        .permitAll()
                 )
                 .formLogin(login -> login
                         .loginPage("/login")
+                        .loginProcessingUrl("/login")
                         .defaultSuccessUrl("/rides", true)
                         .permitAll()
                 )
