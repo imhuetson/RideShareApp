@@ -2,6 +2,7 @@ package imhuetson.com.example.rideshareapp.controller;
 
 import imhuetson.com.example.rideshareapp.domain.Ride;
 import imhuetson.com.example.rideshareapp.repository.RideRepository;
+import imhuetson.com.example.rideshareapp.messaging.RideMessageProducer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RideController {
 
     private final RideRepository rideRepo;
+    private final RideMessageProducer producer;
 
-    public RideController(RideRepository rideRepo) {
+    public RideController(RideRepository rideRepo,
+                          RideMessageProducer producer) {
+
         this.rideRepo = rideRepo;
+        this.producer = producer;
     }
 
     @GetMapping
@@ -37,6 +42,8 @@ public class RideController {
     @PostMapping("/create")
     public String createRide(Ride ride) {
         rideRepo.save(ride);
+        producer.sendMessage(
+                "New ride to " + ride.getToCampus() + "has been created.");
 
         return "redirect:/rides";
     }
@@ -73,6 +80,8 @@ public class RideController {
 
             rideRepo.save(ride);
         }
+        producer.sendMessage(
+                "Ride to" + ride.getToCampus() + "has been cancelled");
 
         return "redirect:/rides/";
     }
