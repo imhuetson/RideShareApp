@@ -15,9 +15,10 @@ CREATE TABLE IF NOT EXISTS ride (
     arrival_time DATETIME,
     max_passengers INT NOT NULL,
     current_passengers INT DEFAULT 0,
-    status VARCHAR(50),
+    status VARCHAR(50) DEFAULT 'OPEN',
     driver_id BIGINT,
-    CONSTRAINT fk_driver FOREIGN KEY (driver_id) REFERENCES users(id)
+    CONSTRAINT fk_driver FOREIGN KEY (driver_id) REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS ride_passengers (
